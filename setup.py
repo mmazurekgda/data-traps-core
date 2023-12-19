@@ -22,7 +22,7 @@ setup(
     python_requires=">=3.12",
     packages=find_packages(exclude=["*.test"]),
     install_requires=[
-        "pydantic",
+        "pydantic>=2.5.2",
         "pydantic-yaml",
     ],
 )

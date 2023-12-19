@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing_extensions import Annotated
 from typing import List
-from pydantic.functional_validators import AfterValidator
+from pydantic import AfterValidator
 from pydantic import FilePath
 from pydantic_yaml import to_yaml_str, parse_yaml_raw_as
 from data_traps_core.defaults import K8_NAMESPACE, ENVIRONMENTS

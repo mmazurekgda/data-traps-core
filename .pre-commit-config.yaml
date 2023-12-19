@@ -8,3 +8,5 @@ repos:
     rev: 6.1.0
     hooks:
     - id: flake8
+default_language_version:
+  python: python3.12

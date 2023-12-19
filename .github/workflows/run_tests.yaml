@@ -16,6 +16,7 @@ jobs:
         cache: 'pip'
     - name: Install dependencies
       run: |
+        pip install requirements.txt
         pip install .
     - name: Run pre-commit
       run: |

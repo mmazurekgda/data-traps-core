@@ -29,6 +29,3 @@ jobs:
     - name: Test with pytest
       run: |
         conda run -n data-traps-core-env pytest test
-    - name: Run pytest
-      run: |
-        pytest test

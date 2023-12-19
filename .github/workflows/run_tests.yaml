@@ -16,8 +16,6 @@ jobs:
         cache: 'pip'
     - name: Install dependencies
       run: |
-        pip install pre-commit
-        pip install pytest
         pip install .
     - name: Run pre-commit
       run: |

@@ -1,4 +1,4 @@
-from data_traps_core.traps import Trap
+from data_traps_core.trap import Trap
 from data_traps_core.defaults import ENVIRONMENTS
 from pydantic_core._pydantic_core import ValidationError
 import pytest

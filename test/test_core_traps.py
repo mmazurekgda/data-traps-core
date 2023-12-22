@@ -1,4 +1,4 @@
-from data_traps_core.traps import Trap
+from data_traps_core.trap import Trap
 import tempfile
 from ruamel.yaml import YAML
 
@@ -10,7 +10,6 @@ def test_writing_core_traps_to_yaml():
         experiment="test_experiment_name",
         environments=["development", "staging"],
         ignore=True,
-        bait_file="path-to-my-bait-file.yaml",
     )
     with tempfile.NamedTemporaryFile() as f:
         trap.dump_to_yaml(f.name)
@@ -23,5 +22,4 @@ def test_writing_core_traps_to_yaml():
             "experiment": "test-experiment-name",
             "environments": ["development", "staging"],
             "ignore": True,
-            "bait_file": "path-to-my-bait-file.yaml",
         }

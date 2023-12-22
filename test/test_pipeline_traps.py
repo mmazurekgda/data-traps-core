@@ -9,7 +9,6 @@ def test_writing_pipeline_traps_to_yaml():
         namespace="test-namespace",
         experiment="test_experiment_name",
         environments=["development", "staging"],
-        bait_file="path-to-my-bait-file.yaml",
     )
     with tempfile.NamedTemporaryFile() as f:
         trap.dump_to_yaml(f.name)
@@ -17,7 +16,6 @@ def test_writing_pipeline_traps_to_yaml():
         f.seek(0)
         data = yaml.load(f)
         assert data == {
-            "bait_file": "path-to-my-bait-file.yaml",
             "name": "my-pipeline-trap-name",
             "namespace": "test-namespace",
             "experiment": "test-experiment-name",

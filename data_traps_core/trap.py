@@ -36,7 +36,6 @@ class Trap(BaseModel):
     namespace: K8Name = K8_NAMESPACE
     environments: Environments = ["development"]
     ignore: bool = False
-    bait_file: str = ""
 
     @staticmethod
     def yaml_to_model(file_path: FilePath) -> "Trap":
